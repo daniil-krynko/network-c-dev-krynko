@@ -7,13 +7,39 @@ struct QuadraticEquation
 	double c;
 };
 
-enum SquareRootResult {NO_ROOT, ONE_ROOT, TWO_ROOT};
+enum SquareRootResult
+{
+	NO_ROOT,
+	ONE_ROOT,
+	TWO_ROOT
+};
 
 struct SquareRootData
 {
-	enum quareRootResult result;
+	enum SquareRootResult result;
 
 	double x1;
-	
+
 	double x2;
+};
+
+enum NumberOperationType
+{
+	AVG,
+	MAX,
+	MIN
+};
+
+struct NumberOperationData
+{
+	enum NumberOperationType type;
+
+	double data[1024];
+};
+
+struct NumberOperationResult
+{
+	enum NumberOperationType type;
+
+	double result;
 };

@@ -1,4 +1,4 @@
-﻿project("square-root-server-mt")
+﻿project("real-array-op")
 
 include_directories(include)
 
